@@ -1,0 +1,12 @@
+# Lambda
+lambda_name = "my-first-lambda"
+vpc_id      = "my-vpc-id"
+
+# ECR
+image_path  = "test/my-first-lambda"
+
+# CostAnalysis
+tags = {
+    Environment = "pre"
+    Project     = "${lambda_name}"
+}
